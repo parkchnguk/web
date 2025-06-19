@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>웹디자이너 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo"></h1>
+    <nav>
+      <ul>
+        <li><a href="#intro" tabindex="1">Home</a></li>
+        <li><a href="#about" tabindex="2">About</a></li>
+        <li><a href="#portfolio" tabindex="3">Portfolio</a></li>
+        <li><a href="#contact" tabindex="4">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="intro" id="intro">
+  <div class="intro-inner">
+    <h1>PORTFOLIO</h1>
+    <h2>Junior Web Designer</h2>
+    <p class="tagline">“디자인은 감정을 전하는 언어입니다.”</p>
+    <a href="#portfolio" class="cta">View My Work</a>
+  </div>
+</section>
+
+<section id="about" tabindex="-1">
+  <h2>About Me</h2>
+  <div class="about-flex">
+    <div class="profile-pic">
+      <img src="img/profile1.jpg" alt="프로필 사진" />
+    </div>
+    <div class="profile-info">
+      <p><strong>이름:</strong> 박창욱</p>
+      <p><strong>생년월일:</strong> 1991년 06월 10일</p>
+
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>2024-12-31 ~ 2025-06-20</strong><br/>(산대특)_클라우드 서비스 기반 UI/UX 웹&amp;앱 퍼블리셔 양성 수료</li>
+          <li><strong>2024-07-06 ~ 2024-08-10</strong><br/>일러스트 활용 및 GTQi 자격증 취득반 수료</li>
+          <li><strong>2024-04-22 ~ 2024-05-22</strong><br/>[GTQ] 포토샵(Photoshop) 편집 디자인 실무 수료</li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skill-grid">
+          <div class="skill-item"><img src="img/icons8-포토샵-48.png" alt="Skill 1" /></div>
+          <div class="skill-item"><img src="img/icons8-어도비-일러스트-레이터-48.png" alt="Skill 2" /></div>
+          <div class="skill-item"><img src="img/icons8-피그마-48.png" alt="Skill 3" /></div>
+          <div class="skill-item"><img src="img/icons8-html-48.png" alt="Skill 4" /></div>
+          <div class="skill-item"><img src="img/icons8-css3-48.png" alt="Skill 5" /></div>
+          <div class="skill-item"><img src="img/icons8-자바-스크립트-48.png" alt="Skill 5" /></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" tabindex="-1">
+  <h2>Portfolio</h2>
+
+  <div class="portfolio-grid">
+    <div class="item"  data-num="1" tabindex="0" data-img="img/MINI 포스터(완).png" data-title="BMW MINI Poster" >
+      <img src="img/MINI 포스터(완).png" alt="Project 1"/>
+      <h3>BMW MINI Poster</h3>
+      <img class="icon" src="img/icons8-포토샵-48.png" alt="포토샵">
+    </div>
+
+    <div class="item" data-num="2"  tabindex="0" data-img="img/쿨라임포스터(완).png" data-title="Drinkables Poster">
+      <img src="img/쿨라임포스터(완).png" alt="Project 2"/>
+      <h3>Drinkables Poster</h3>
+      <img class="icon" src="img/icons8-포토샵-48.png" alt="포토샵">
+    </div>
+
+    <div class="item" data-num="3"  tabindex="0" data-img="img/저탄소 카드뉴스.jpg" data-title="Card News">
+      <img src="img/저탄소 카드뉴스.jpg" alt="Project 3"/>
+      <h3>Card News</h3>
+      <img class="icon" src="img/icons8-어도비-일러스트-레이터-48.png" alt="일러스트">
+    </div>
+
+    <div class="item" data-num="4"  tabindex="0" data-img="img/쇼핑몰 메인페이지.png" data-title="ShppingMall Main Page">
+      <img src="img/쇼핑몰 메인페이지.png" alt="Project 4"/>
+      <h3>ShppingMall Main Page</h3>
+      <a href="https://www.figma.com/design/06BhdgY4nVLf5hZEMC6eKv/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=15-3&m=dev&t=gw4wJwScBaz5dGKR-1" target="_blank">
+      <button class="go">Go to Website</button>
+      <img class="icon2" src="img/icons8-피그마-48.png" alt="피그마">
+      </a>
+    </div>
+
+    <div class="item" data-num="5" id="item5" data-img="img/디퓨저 상세페이지11.png" data-title="Diffuser Detail Page">
+      <img src="img/디퓨저.png" alt="Project 4" />
+      <h3>Diffuser Detail Page</h3>
+      <div class="pic">
+        <img class="icon3" src="img/icons8-포토샵-48.png" alt="포토샵">
+      <img class="icon3" src="img/icons8-어도비-일러스트-레이터-48.png" alt="일러스트">
+      </div>
+      
+    </div> 
+
+    <div class="item" data-num="6"  tabindex="0" data-img="img/원두 상세페이지11.png" data-title="Coffee Beans">
+      <img src="img/원두.png" alt="Project 6" />
+      <h3>Coffee Beans</h3>
+       <div class="pic">
+        <img class="icon3" src="img/icons8-포토샵-48.png" alt="포토샵">
+      <img class="icon3" src="img/icons8-어도비-일러스트-레이터-48.png" alt="일러스트">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" tabindex="-1"> <h2>Contact</h2>
+  <div class="wrap">
+    <div class="last">
+      <p>제 포트폴리오를 읽어주셔서 감사합니다.<br>
+        앞으로도 진심과 열정을 담아 <br> 
+        꾸준히 성장하는 디자이너가 되겠습니다.</p>
+    </div>
+    <div class="wrapcontact">
+      <input type="text" id="name" class="name" placeholder="Name">
+      <input type="email" id="email" class="email" placeholder="E-mail">
+      <textarea name="text1" id="text1" placeholder="Contact"></textarea>
+      <button class="send">SEND</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Thank you for reviewing my portfolio. Designed & developed by Chang-Wook Park</p>
+  <p>This website is a personal portfolio created for non-commercial purposes.</p>
+  <p>All designs and content are © 2025 by the creator. Some images are sourced from Unsplash.</p>
+</footer>
+
+<!-- 모달 팝업 -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="닫기">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <img src="" alt="" />
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalTitle = modal.querySelector('#modalTitle');
+  const modalImg = modal.querySelector('img');
+  const modalClose = modal.querySelector('.modal-close');
+
+  document.querySelectorAll('.portfolio-grid .item').forEach(item => {
+    item.addEventListener('click', (e) => {
+      const temp =parseInt(item.getAttribute('data-num')) ;
+      
+          if(temp === 5 || temp === 6){
+            return openModal2(item);
+          }else{    
+            return openModal(item)
+            }
+      }
+    );
+    item.addEventListener('keydown', e => {
+      if(e.key === 'Enter') openModal(item);
+    });
+  });
+ function openModal2(item) {
+    modalTitle.textContent = item.dataset.title;
+    modalImg.src = item.dataset.img;
+    modalImg.alt = item.dataset.title;
+    modal.classList.add('show');
+    document.querySelector('.modal-content').classList.add('show2')
+      document.querySelector('.modal-content img').classList.add('imgadd')
+    modal.focus();
+  }  
+
+  function openModal(item) {
+    modalTitle.textContent = item.dataset.title;
+    modalImg.src = item.dataset.img;
+    modalImg.alt = item.dataset.title;
+    modal.classList.add('show');
+    modal.focus();
+  }
+
+  function closeModal() {
+    modal.classList.remove('show');
+    document.querySelector('.modal-content').classList.remove('show2')
+    document.querySelector('.modal-content img').classList.remove('imgadd')
+    modalImg.src = '';
+    modalTitle.textContent = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => {
+    if(e.target === modal) closeModal();
+  });
+  window.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
+</script>
+
+</body>
+</html>
