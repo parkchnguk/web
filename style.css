@@ -319,7 +319,7 @@ section h2 {
 }
 
 .portfolio-grid .item img {
-                width: 100%;
+                width: 240px;
                 height: 180px;
                 object-fit: cover;
                 display: block;
