@@ -3,17 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   color: #333;
   line-height: 1.6;
   background-color: #f9f9f9;
   scroll-behavior: smooth;
+  word-break: keep-all; /* 모바일에서 단어 잘림 방지 */
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
@@ -29,49 +33,58 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
 }
+
 .nav-container {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
+  padding: 1rem 1.5rem;
 }
+
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #111;
   letter-spacing: -0.5px;
 }
+
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
+
 .nav-links a {
   font-weight: 500;
   color: #555;
   transition: color 0.3s;
+  font-size: 0.95rem;
 }
+
 .nav-links a:hover {
   color: #2563eb;
 }
 
-/* CONTAINER */
+/* CONTAINER & SECTION */
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
+
 section {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
+
 .section-title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   position: relative;
   color: #111;
 }
+
 .section-title::after {
   content: '';
   position: absolute;
@@ -83,35 +96,49 @@ section {
   border-radius: 2px;
 }
 
+.section-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
 /* HERO SECTION */
 #hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: #fff;
+  padding: 6rem 0 4rem;
 }
+
 .hero-content {
   max-width: 800px;
 }
+
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #60a5fa;
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
+
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 1.5rem;
 }
+
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #94a3b8;
   margin-bottom: 2rem;
-  word-break: keep-all;
+  line-height: 1.7;
 }
+
 .btn {
   display: inline-block;
   padding: 0.8rem 1.8rem;
@@ -121,6 +148,7 @@ section {
   font-weight: 600;
   transition: background-color 0.3s;
 }
+
 .btn:hover {
   background-color: #1d4ed8;
 }
@@ -129,43 +157,51 @@ section {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
+  gap: 2.5rem;
+  align-items: start;
 }
+
+.about-quote {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+
 .about-text p {
-  margin-bottom: 5rem;
   color: #4b5563;
-  word-break: keep-all;
+  line-height: 1.7;
 }
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
+
 .skill-tag {
   background-color: #eff6ff;
   color: #2563eb;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 /* PROJECTS SECTION */
-.section-subtitle{
-  font-size: 20px;
-  color: gray;
-}
 #projects {
   background-color: #fff;
 }
+
 .projects-grid {
-  margin-top: 30px;
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
+
 .project-card {
   background-color: #fff;
   border: 1px solid #e5e7eb;
@@ -173,57 +209,65 @@ section {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-/* 이미지 카드 영의 크기 고정 및 비율 유지 속성 */
 .project-img {
   width: 100%;
-  height: 220px; /* 원하는 이미지 박스 높이 */
+  height: 220px;
   background-color: #cbd5e1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
-  font-weight: 600;
-  overflow: hidden; /* 이미지 삐져나옴 방지 */
+  overflow: hidden;
 }
 
-/* 썸네일 이미지 세부 옵션 */
 .project-thumbnail {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지가 잘리지 않고 네모 상자 비율에 맞춰 채워짐 */
+  object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .project-thumbnail:hover {
-  transform: scale(1.05); /* 마우스 올렸을 때 은은한 확대 */
+  transform: scale(1.05);
 }
 
 .project-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
+
 .project-title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
 }
+
 .project-desc {
   font-size: 0.95rem;
   color: #6b7280;
-  margin-bottom: 1rem;
-  word-break: keep-all;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
+
 .project-tags {
   display: flex;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   margin-bottom: 1.2rem;
 }
+
 .project-tag {
   font-size: 0.8rem;
   color: #4b5563;
@@ -231,6 +275,11 @@ section {
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }
+
+.project-links {
+  margin-top: auto;
+}
+
 .project-links a {
   font-size: 0.9rem;
   color: #2563eb;
@@ -240,20 +289,35 @@ section {
 
 /* CONTACT SECTION */
 .contact-wrapper {
-  text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-}
-.contact-wrapper p {
-  color: #4b5563;
-  margin-bottom: 2rem;
-}
-.contact-email {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2563eb;
+  text-align: center; /* 전체 영역 가운데 정렬 */
 }
 
+#contact .section-title {
+  display: inline-block; /* 중앙 정렬 기준을 맞추기 위해 인라인 블록 설정 */
+  text-align: center;
+}
+
+#contact .section-title::after {
+  left: 50%;
+  transform: translateX(-50%); /* 파란색 선을 제목 'CONTACT' 중앙 바로 밑으로 위치 */
+}
+
+.contact-quote {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin: 1.5rem 0 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-text {
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: center;
+}
 /* FOOTER */
 footer {
   background-color: #0f172a;
@@ -263,9 +327,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ==========================================
-   IMAGE MODAL STYLES (이미지 확대 팝업)
-   ========================================== */
+/* IMAGE MODAL */
 .modal {
   display: none;
   position: fixed;
@@ -278,17 +340,16 @@ footer {
   justify-content: center;
   align-items: flex-start;
   overflow-y: auto;
-  padding: 40px 20px;
+  padding: 40px 15px;
   backdrop-filter: blur(3px);
 }
 
 .modal-content {
   width: 100%;
-  /* 💡 기존 900px에서 600px~700px 정도로 줄여 한눈에 보기 편하게 조정합니다. */
-  max-width: 650px; 
+  max-width: 650px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   animation: zoomIn 0.3s ease;
   margin: auto;
   display: block;
@@ -296,18 +357,13 @@ footer {
 
 .modal-close {
   position: fixed;
-  top: 20px;
-  right: 35px;
+  top: 15px;
+  right: 20px;
   color: #fff;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   cursor: pointer;
-  transition: color 0.2s;
   z-index: 10000;
-}
-
-.modal-close:hover {
-  color: #ccc;
 }
 
 @keyframes zoomIn {
@@ -321,12 +377,80 @@ footer {
   }
 }
 
-/* RESPONSIVE */
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE (미디어 쿼리)
+   ========================================== */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.2rem;
+  section {
+    padding: 3.5rem 0;
   }
+
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.35;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-subtitle {
+    display: block;
+    margin-top: 0.3rem;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .about-quote {
+    font-size: 1.15rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* 모바일에서 1열 고정 */
+    gap: 1.5rem;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+
+  .contact-quote {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .contact-text {
+    font-size: 0.92rem;
+    text-align: center; /* 모바일에서도 가운데 정렬 유지 */
+  }
+
+  .modal {
+    padding: 30px 10px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
   }
 }
