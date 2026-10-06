@@ -1,0 +1,252 @@
+/* Native HTML text stays sharp at every device pixel ratio. Only the two banners scale. */
+#campaign .hb-banner-stack { grid-column:1 / -1; width:100%; max-width:1140px; justify-self:center; gap:48px; }
+#campaign .hb-banner-stack > figure { min-width:0; }
+#campaign .hb-banner-canvas { container-type:inline-size; width:100%; }
+#campaign .hb-banner-viewport { width:100%; }
+#campaign .hb-banner-zoom { display:none; }
+@media(max-width:700px) {
+  #campaign .hb-banner-viewport { overflow-x:auto; overscroll-behavior-x:contain; }
+  #campaign .hb-banner-viewport.is-zoomed .hb-banner-canvas { width:700px; }
+  #campaign .hb-banner-zoom { display:block; border:0; border-bottom:1px solid #b9bbae; background:none; color:#53604e; font:12px/1.6 'Malgun Gothic',sans-serif; padding:8px 0 4px; margin-top:10px; cursor:pointer; }
+  #campaign .hb-banner-zoom:focus-visible, #campaign .hb-banner-viewport:focus-visible { outline:2px solid #737c69; outline-offset:3px; }
+}
+#campaign .hb-banner-stack .hb-art { width:100%; height:auto; min-height:0; grid-template-columns:1fr 1.1fr; }
+#campaign .hb-banner-stack .hb-set { aspect-ratio:666.296875 / 275; }
+#campaign .hb-banner-stack .hb-welcome { aspect-ratio:666.296875 / 272.46875; }
+#campaign .hb-banner-stack .hb-set-photo,#campaign .hb-banner-stack .hb-welcome-photo { min-height:0; margin:0; }
+#campaign .hb-banner-stack .hb-set-photo img,#campaign .hb-banner-stack .hb-welcome-photo img { aspect-ratio:auto; image-rendering:auto; }
+#campaign .hb-banner-stack .hb-mark { width:3.001667cqw; height:3.001667cqw; flex-shrink:0; }
+#campaign .hb-banner-stack .hb-sticker,#campaign .hb-banner-stack .hb-welcome-photo>span { left:1.801cqw; right:1.801cqw; bottom:1.801cqw; }
+/* Give the poster its own full row, independent of the wide banners. */
+#campaign .hb-poster-item { grid-column:1 / -1; width:100%; min-width:0; justify-self:center; }
+#campaign .hb-poster-item > .hb-poster,
+#campaign .hb-poster-item > .hb-art-caption { width:100%; max-width:760px; margin-inline:auto; }
+#campaign .hb-poster-item .hb-poster { height:auto; aspect-ratio:2 / 3; }
+#campaign .hb-poster-item .hb-poster-photo img { display:block; width:100%; height:auto; object-fit:contain; }
+@media(max-width:1000px) { #campaign .hb-campaigns { max-width:none; } }
+@media(max-width:700px) { #campaign .hb-banner-stack { gap:32px; } }
+#campaign .hb-banner-stack .hb-discount {
+  border-radius:0.000000cqw;
+  font-size:10.805994cqw;
+  gap:normal;
+  letter-spacing:-0.702390cqw;
+  line-height:10.265694cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-discount small {
+  border-radius:0.000000cqw;
+  font-size:4.646577cqw;
+  gap:normal;
+  letter-spacing:-0.702390cqw;
+  line-height:4.414249cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.450250cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-set .hb-art-cta {
+  border-radius:0.450250cqw;
+  font-size:1.650916cqw;
+  gap:2.701498cqw;
+  letter-spacing:normal;
+  line-height:3.054194cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:1.200666cqw;
+  padding-left:1.800999cqw;
+  padding-right:1.800999cqw;
+  padding-top:1.200666cqw;
+}
+#campaign .hb-banner-stack .hb-set .hb-mark {
+  border-radius:50%;
+  font-size:2.401332cqw;
+  gap:normal;
+  letter-spacing:0.052529cqw;
+  line-height:2.521399cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-set .hb-sticker {
+  border-radius:0.300166cqw;
+  font-size:1.350749cqw;
+  gap:normal;
+  letter-spacing:0.135075cqw;
+  line-height:2.026124cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:1.200666cqw;
+  padding-left:0.750416cqw;
+  padding-right:0.750416cqw;
+  padding-top:1.200666cqw;
+}
+#campaign .hb-banner-stack .hb-set .hb-wordmark {
+  border-radius:0.000000cqw;
+  font-size:1.500832cqw;
+  gap:1.050583cqw;
+  letter-spacing:0.052529cqw;
+  line-height:1.575874cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-set h3 {
+  border-radius:0.000000cqw;
+  font-size:4.052248cqw;
+  gap:normal;
+  letter-spacing:-0.182351cqw;
+  line-height:5.673147cqw;
+  margin-bottom:1.500832cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:2.701498cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-set p {
+  border-radius:0.000000cqw;
+  font-size:1.800999cqw;
+  gap:normal;
+  letter-spacing:normal;
+  line-height:3.241798cqw;
+  margin-bottom:2.551415cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-set-copy {
+  border-radius:0.000000cqw;
+  font-size:2.401332cqw;
+  gap:normal;
+  letter-spacing:normal;
+  line-height:4.442464cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:3.601998cqw;
+  padding-left:3.601998cqw;
+  padding-right:2.701498cqw;
+  padding-top:3.601998cqw;
+}
+#campaign .hb-banner-stack .hb-welcome .hb-art-cta {
+  border-radius:0.450250cqw;
+  font-size:1.650916cqw;
+  gap:2.701498cqw;
+  letter-spacing:normal;
+  line-height:3.054194cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:1.200666cqw;
+  padding-left:1.800999cqw;
+  padding-right:1.800999cqw;
+  padding-top:1.200666cqw;
+}
+#campaign .hb-banner-stack .hb-welcome .hb-art-label {
+  border-radius:0.000000cqw;
+  font-size:1.350749cqw;
+  gap:normal;
+  letter-spacing:0.121567cqw;
+  line-height:2.498886cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-welcome h3 {
+  border-radius:0.000000cqw;
+  font-size:3.151748cqw;
+  gap:normal;
+  letter-spacing:-0.141829cqw;
+  line-height:4.254860cqw;
+  margin-bottom:1.050583cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:1.800999cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-welcome-copy {
+  border-radius:0.000000cqw;
+  font-size:2.401332cqw;
+  gap:normal;
+  letter-spacing:normal;
+  line-height:4.442464cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:3.451915cqw;
+  padding-left:3.601998cqw;
+  padding-right:3.601998cqw;
+  padding-top:3.451915cqw;
+}
+#campaign .hb-banner-stack .hb-welcome-copy>p {
+  border-radius:0.000000cqw;
+  font-size:1.650916cqw;
+  gap:normal;
+  letter-spacing:normal;
+  line-height:2.971648cqw;
+  margin-bottom:2.251249cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:1.500832cqw;
+  padding-bottom:0.000000cqw;
+  padding-left:0.000000cqw;
+  padding-right:0.000000cqw;
+  padding-top:0.000000cqw;
+}
+#campaign .hb-banner-stack .hb-welcome-photo>span {
+  border-radius:0.000000cqw;
+  font-size:1.350749cqw;
+  gap:normal;
+  letter-spacing:0.108060cqw;
+  line-height:2.498886cqw;
+  margin-bottom:0.000000cqw;
+  margin-left:0.000000cqw;
+  margin-right:0.000000cqw;
+  margin-top:0.000000cqw;
+  padding-bottom:1.200666cqw;
+  padding-left:1.200666cqw;
+  padding-right:1.200666cqw;
+  padding-top:1.200666cqw;
+}

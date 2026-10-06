@@ -1,0 +1,16 @@
+/* Shared only by banner/poster collections; no effect on existing brand pages. */
+:is(.banner-page,.poster-page) .design-notes { margin-top:28px; padding-top:26px; border-top:1px solid #dedbd4; }
+:is(.banner-page,.poster-page) .design-notes h3,
+:is(.banner-page,.poster-page) .design-notes dt { font-family:Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.12em; color:#827c72; margin-bottom:10px; }
+:is(.banner-page,.poster-page) .design-concept p { font-size:13px; line-height:1.95; color:#625e57; max-width:760px; word-break:keep-all; }
+:is(.banner-page,.poster-page) .design-palette { margin-top:24px; }
+:is(.banner-page,.poster-page) .design-palette ul { list-style:none; display:flex; gap:14px 22px; flex-wrap:wrap; }
+:is(.banner-page,.poster-page) .design-palette li { display:flex; align-items:center; gap:8px; font-family:Arial,sans-serif; font-size:11px; color:#6a655d; }
+:is(.banner-page,.poster-page) .design-palette i { display:block; width:22px; height:22px; flex:none; border-radius:50%; background:var(--swatch); border:1px solid #00000014; }
+:is(.banner-page,.poster-page) .design-facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:22px; margin-top:26px; }
+:is(.banner-page,.poster-page) .design-facts dd { font-size:12px; color:#625e57; line-height:1.85; word-break:keep-all; }
+@media(max-width:767px) {
+ :is(.banner-page,.poster-page) .design-notes { margin-top:24px; padding-top:24px; }
+ :is(.banner-page,.poster-page) .design-facts { grid-template-columns:1fr; gap:20px; }
+ :is(.banner-page,.poster-page) .design-palette ul { gap:14px 18px; }
+}

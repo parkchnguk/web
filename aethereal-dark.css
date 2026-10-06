@@ -1,0 +1,797 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111315;
+  color: #f3f1ec;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.inner {
+  width: min(90%, 1400px);
+  margin: 0 auto;
+}
+
+/* topbar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(17, 19, 21, 0.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.topbar-inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-logo,
+.topbar-project {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: rgba(255,255,255,.72);
+}
+
+.topbar-logo {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+}
+
+/* cover */
+.cover {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 64px;
+  overflow: hidden;
+  background: #0e1012;
+}
+
+.cover-media {
+  position: absolute;
+  inset: 0;
+}
+
+.cover-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8,10,12,.76) 0%,
+    rgba(8,10,12,.44) 40%,
+    rgba(8,10,12,.18) 100%
+  );
+}
+
+.cover-overlay {
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+}
+
+.cover-copy {
+  max-width: 560px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: rgba(255,255,255,.65);
+}
+
+.cover-copy h1 {
+  font-family: "Crimson Text", serif;
+  font-size: clamp(64px, 9vw, 130px);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.cover-copy p {
+  margin-top: 24px;
+  max-width: 460px;
+  color: rgba(255,255,255,.72);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* sections */
+.section {
+  padding: 130px 0;
+}
+
+.section-dark {
+  background: #15181b;
+}
+
+.section-mid {
+  background: #1b1f24;
+}
+
+.section-deep {
+  background: #101214;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #7f8a96;
+}
+
+/* intro */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 80px;
+}
+
+.intro-title h2,
+.concept-head h2,
+.vd-head h2,
+.lifestyle-head h2,
+.block-head h2,
+.final-copy h2 {
+  font-family: "Crimson Text", serif;
+  font-size: clamp(46px, 5vw, 78px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.intro-desc p,
+.concept-head p,
+.vd-head p,
+.lifestyle-head p,
+.block-head p {
+  color: #a8a7a3;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.info-grid span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #7f8a96;
+}
+
+.info-grid p {
+  color: #e6e0d8;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* concept */
+.concept-head,
+.vd-head,
+.lifestyle-head,
+.block-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.concept-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 70px;
+}
+
+.concept-cards article {
+  padding: 24px;
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.concept-cards span {
+  font-size: 10px;
+  color: #7f8a96;
+}
+
+.concept-cards h3 {
+  margin-top: 28px;
+  font-family: "Crimson Text", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.concept-cards p {
+  margin-top: 12px;
+  color: #a8a7a3;
+  font-size: 13px;
+}
+
+/* palette */
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 54px;
+}
+
+.swatch {
+  height: 180px;
+  display: flex;
+  align-items: end;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.swatch span {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.s1 { background: #111315; }
+.s2 { background: #1a1e23; }
+.s3 { background: #242b33; }
+.s4 { background: #515b67; }
+.s5 { background: #d9dce1; color: #111315; }
+
+/* key visual */
+.grid-visual {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 18px;
+}
+
+.grid-visual .big {
+  grid-row: span 2;
+}
+
+.grid-visual figure {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+.grid-visual img,
+.life-grid img,
+.full-shot img,
+.detail-shot img,
+.device-wrap img,
+.campaign-grid img,
+.final-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* lifestyle */
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 60px;
+}
+
+.life-grid figure {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+/* web / detail */
+.full-shot,
+.detail-shot {
+  margin-top: 60px;
+  border: 1px solid rgba(255,255,255,.05);
+  overflow: hidden;
+}
+
+/* 긴 상세페이지는 페이지 안에서 적절한 크기로 표시 */
+.detail-shot {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* responsive */
+.device-wrap {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.device-wrap figure {
+  border: 1px solid rgba(255,255,255,.05);
+  overflow: hidden;
+  background: #16191d;
+}
+
+.desktop { width: 58%; }
+.tablet  { width: 22%; }
+.mobile  { width: 12%; }
+
+.desktop img { aspect-ratio: 16 / 10; }
+.tablet img  { aspect-ratio: 3 / 4; }
+.mobile img  { aspect-ratio: 9 / 19; }
+
+.device-wrap figcaption {
+  padding: 12px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #8c97a2;
+  text-align: center;
+}
+
+/* campaign */
+.campaign-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+}
+
+.campaign-large {
+  grid-row: span 2;
+}
+
+.campaign-grid figure {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+/* final */
+.final-section {
+  position: relative;
+  min-height: 90vh;
+  background: #0c0e10;
+}
+
+.final-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.final-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.final-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10,12,14,.2) 0%,
+    rgba(10,12,14,.65) 100%
+  );
+}
+
+.final-copy {
+  position: relative;
+  z-index: 2;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 90px;
+}
+
+.final-copy span {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #98a2ad;
+}
+
+.final-copy p {
+  margin-top: 16px;
+  font-size: 15px;
+  color: rgba(255,255,255,.72);
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .intro-grid,
+  .concept-head,
+  .vd-head,
+  .lifestyle-head,
+  .block-head {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .concept-cards,
+  .life-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .palette {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .desktop { width: 52%; }
+  .tablet  { width: 24%; }
+  .mobile  { width: 16%; }
+}
+
+@media (max-width: 767px) {
+  .inner {
+    width: calc(100% - 32px);
+  }
+
+  .topbar-inner {
+    height: 58px;
+  }
+
+  .topbar-project {
+    display: none;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .cover-copy h1 {
+    font-size: 54px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .palette {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-visual,
+  .campaign-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-visual .big,
+  .campaign-large {
+    grid-row: auto;
+  }
+
+  .device-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop,
+  .tablet,
+  .mobile {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .life-grid figure {
+    aspect-ratio: 4 / 5;
+  }
+}
+/* 웹·상세페이지·기기 시안 이미지의 원본 비율 유지 */
+.full-shot img,
+.detail-shot img,
+.device-wrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* 모바일 화면 보완 */
+@media (max-width: 767px) {
+  /* 상단바 높이와 커버 여백 일치 */
+  .cover {
+    padding-top: 58px;
+  }
+
+  .cover-overlay {
+    min-height: calc(100vh - 58px);
+  }
+
+  /* 기기 시안 세로 배치 */
+  .device-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  /* 기기별 표시 크기 구분 */
+  .device-wrap .desktop {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .device-wrap .tablet {
+    width: 85%;
+    max-width: 360px;
+  }
+
+  .device-wrap .mobile {
+    width: 70%;
+    max-width: 260px;
+  }
+
+    .life-grid figure {
+    aspect-ratio: 4 / 5;
+  }
+} /* 기존 모바일 설정을 여기서 닫기 */
+
+/* 커버 이미지 전체 표시 */
+.cover-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* RESPONSIVE: 같은 너비로 나란히 배치 */
+.device-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+
+/* 기존 기기별 너비 제한 해제 */
+.device-wrap .desktop,
+.device-wrap .tablet,
+.device-wrap .mobile {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+/* 이미지 전체를 원본 비율로 표시 */
+.device-wrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.device-wrap figcaption {
+  padding: 16px;
+  font-size: 12px;
+}
+
+/* 좁은 화면에서는 한 장씩 크게 표시 */
+@media (max-width: 1024px) {
+  .device-wrap {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 720px;
+    margin-inline: auto;
+    gap: 40px;
+  }
+}
+  /* PC: 데스크톱은 위에 크게, 태블릿·모바일은 아래에 */
+.device-wrap {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1000px;
+  margin-inline: auto;
+  gap: 40px 32px;
+}
+
+.device-wrap .desktop {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+}
+
+.device-wrap .tablet,
+.device-wrap .mobile {
+  width: 100%;
+  max-width: 460px;
+  justify-self: center;
+}
+
+/* 작은 화면: 모두 한 장씩 표시 */
+@media (max-width: 1024px) {
+  .device-wrap {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 720px;
+  }
+
+  .device-wrap .desktop,
+  .device-wrap .tablet,
+  .device-wrap .mobile {
+    grid-column: auto;
+    width: 100%;
+    max-width: none;
+  }
+}
+@media (min-width: 1025px) {
+  .device-wrap .tablet,
+  .device-wrap .mobile {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .device-wrap .tablet img,
+  .device-wrap .mobile img {
+    flex-shrink: 0;
+  }
+
+  .device-wrap .tablet figcaption,
+  .device-wrap .mobile figcaption {
+    margin-top: auto;
+  }
+}
+/* CAMPAIGN: 광고 원본 비율에 맞춘 배치 */
+.campaign-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 24px;
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.campaign-grid .campaign-large {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.campaign-grid figure {
+  min-width: 0;
+}
+
+.campaign-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 작은 화면에서는 광고를 한 장씩 표시 */
+@media (max-width: 767px) {
+  .campaign-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+  .campaign-grid .campaign-large {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+.final-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* 최종 가독성 보완 */
+.intro-desc > p,
+.concept-head p,
+.vd-head p,
+.lifestyle-head p,
+.block-head p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+.info-grid p,
+.concept-cards p { font-size: 14px; }
+.section-label,
+.info-grid span,
+.eyebrow,
+.final-copy span { font-size: 12px; }
+.intro-grid > *,
+.concept-head > *,
+.vd-head > *,
+.lifestyle-head > *,
+.block-head > * { min-width: 0; }
+.image-display { display: block; }
+.image-display img { width: 100%; height: auto; }
+.topbar-logo:focus-visible {
+  outline: 2px solid #d9dce1;
+  outline-offset: -3px;
+}
+.view-hint {
+  margin-top: 14px;
+  color: #b7bec6;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.responsive-note {
+  margin: -24px 0 36px;
+  color: #b7bec6;
+  font-size: 15px;
+  line-height: 1.9;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .life-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .section { padding: 64px 0; }
+  .section-label { margin-bottom: 32px; }
+  .palette {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .swatch { height: 112px; padding: 14px; }
+  .swatch span { font-size: 12px; }
+  .cover,
+  .final-section { min-height: 0; }
+  .cover-media,
+  .final-bg { position: relative; inset: auto; }
+  .cover-media img,
+  .final-bg img { height: auto; object-fit: contain; }
+  .cover-overlay,
+  .final-copy {
+    min-height: 0;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  .cover::after,
+  .final-section::after { display: none; }
+  .cover-copy h1 { font-size: clamp(36px, 10vw, 54px); }
+  .intro-title h2,
+  .concept-head h2,
+  .vd-head h2,
+  .lifestyle-head h2,
+  .block-head h2,
+  .final-copy h2 {
+    font-size: clamp(32px, 9vw, 46px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+  .full-shot,
+  .detail-shot,
+  .life-grid,
+  .palette { margin-top: 32px; }
+  .concept-cards { margin-top: 40px; }
+  .responsive-note { margin: -12px 0 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -1,0 +1,86 @@
+/* Campaign art direction: soft sage, warm neutrals and compact product compositions. */
+.events-heading{display:flex;align-items:end;justify-content:space-between;gap:32px}
+@media(max-width:700px){.events-heading{flex-direction:column;align-items:start!important;gap:24px}}
+.hb-wordmark{display:flex;align-items:center;gap:10px;color:#29382c;font:600 18px/1.05 Georgia,serif;letter-spacing:-.04em}
+.hb-wordmark b{font:inherit}.hb-wordmark small{display:block;font:10px/1.4 'Malgun Gothic',sans-serif;letter-spacing:.08em;margin-top:7px}.hb-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid currentColor;border-radius:50%;font-size:29px;font-weight:400}
+.hb-thumbnail{position:relative}.hb-thumbnail .hb-wordmark{position:absolute;top:7%;left:7%;z-index:2;pointer-events:none}.hb-thumbnail .hb-wordmark small{font-size:10px}.hb-thumbnail .hb-wordmark{font-size:clamp(16px,2vw,28px)}
+.hero{background:#eeeee3;grid-template-columns:1fr 1fr;min-height:720px;position:relative;overflow:hidden}
+.hero-copy{min-height:720px;padding:48px 9% 40px 10%;position:relative;z-index:1}.hero h1{font-size:clamp(76px,8.5vw,138px);margin:50px 0 26px}.hero h1 em{color:#36543c}.hero-bottom{margin-top:auto}.hero-photo{width:100%;height:100%;aspect-ratio:auto;margin:0;align-self:stretch;background:#e8e4d8}.hero-photo img{position:absolute;height:100%;width:100%;object-fit:cover;box-shadow:none}.hero-photo .hb-wordmark{position:absolute;top:36px;left:36px;z-index:1;font-size:25px}.hero-photo figcaption{top:auto;bottom:24px;left:36px;font-size:10px}.hero-photo .image-index{bottom:24px;right:28px}.hero-edition{display:flex;gap:9px;align-items:center;font-size:11px;letter-spacing:.13em}.hero-edition:before{content:'';width:8px;height:8px;background:#527045;border-radius:50%}.hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.hero-tags span{border:1px solid #b8c0ab;border-radius:30px;padding:5px 12px;font-size:11px}
+.manifesto{background:#dce99e;padding:23px 5%;border-top:1px solid #29382c20;border-bottom:1px solid #29382c20}.manifesto>span:last-child{font-size:36px}
+.hb-project-nav{display:flex;justify-content:center;gap:36px;padding:20px 5%;border-bottom:1px solid #d9ded1;font-size:12px}.hb-project-nav a{padding:5px 0}.hb-project-nav a:hover{text-decoration:underline;text-underline-offset:6px}
+.section-heading{border-top:1px solid #bdc7b6;padding-top:18px}.website-section{background:#263f32;color:#f5f3e7}.website-section h2 em{color:#dce99e}.website-section .eyebrow,.website-section .small-note,.website-section .heading-grid>div>p,.website-section .device-gallery figcaption>span{color:#d5ddce}.website-section .homepage-shot{max-width:980px;border:8px solid #f0eee3;box-shadow:0 24px 60px #11261955}.website-section .device-gallery{gap:28px}.website-section .device-gallery figure{background:#f1f0e8;padding:18px;color:#29382c}.website-section .device-gallery figcaption>span{color:#536349}.website-section .section-heading{border-color:#82917b}
+.everyday-section{background:#eeeee3}.everyday-grid{gap:6%;align-items:start}.everyday-grid figure:last-child{margin-top:100px}.everyday-grid figure:first-child img{aspect-ratio:4/5;object-fit:cover}.everyday-grid figure:last-child img{aspect-ratio:1/1}.everyday-grid figcaption{border-bottom:1px solid #bcc5b5}.everyday-grid h3{font-size:25px}
+.campaign-section{background:#e5e7dd}.campaign-section .events-heading{align-items:end}.campaign-intro{max-width:310px;font-size:15px;color:#536349}.hb-campaigns{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:38px;margin-top:52px;align-items:start}.hb-banner-stack{display:grid;gap:32px}.hb-art{position:relative;overflow:hidden;isolation:isolate}.hb-art *{box-sizing:border-box}.hb-art .hb-wordmark{font-size:15px;gap:7px}.hb-art .hb-mark{width:25px;height:25px;font-size:20px}.hb-art-label{font-size:10px;letter-spacing:.13em;font-weight:600}.hb-art h3{font-family:'Malgun Gothic',sans-serif;font-weight:500;letter-spacing:-.06em;line-height:1.35}.hb-art p{font-size:12px;line-height:1.8}.hb-art-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;border-radius:30px;padding:9px 17px;background:#293f2f;color:#fff9e9;font-size:11px}.hb-art-caption{display:flex;justify-content:space-between;gap:12px;margin-top:13px;padding-top:10px;border-top:1px solid #b9c1b0;font-size:11px;letter-spacing:.04em;color:#4f5b4c}
+.hb-set{background:#f6f1e4;display:grid;grid-template-columns:1fr 1fr;min-height:330px}.hb-set-copy{padding:30px 0 28px 28px;z-index:2;display:flex;align-items:start;flex-direction:column}.hb-set h3{font-size:clamp(25px,2.7vw,40px);margin:24px 0 10px}.hb-set p{margin-bottom:20px}.hb-set .hb-art-cta{margin-top:auto}.hb-set-photo{position:relative;align-self:stretch;margin:30px 20px 30px 8px;min-width:0;display:flex;align-items:center}.hb-set-photo:before{content:'';position:absolute;inset:7% -30%;border:1px solid #8f9e7355;border-radius:50%;z-index:-1}.hb-set-photo img{width:100%;aspect-ratio:1/1.16;object-fit:cover;object-position:58% 50%;border-radius:140px 140px 10px 10px}.hb-sticker{position:absolute;right:-5px;bottom:4px;width:72px;height:72px;border-radius:50%;display:grid;place-content:center;text-align:center;transform:rotate(12deg);background:#dce99e;font:italic 19px/1.1 Georgia,serif;border:1px solid #29382c25}.hb-sticker small{font:9px/1.8 'Malgun Gothic',sans-serif}
+.hb-welcome{min-height:270px;background:#dce99e;display:grid;grid-template-columns:1.2fr 1fr}.hb-welcome-copy{padding:26px;position:relative;z-index:1}.hb-welcome h3{font-size:21px;margin:15px 0 2px}.hb-discount{display:block;font:400 clamp(70px,8vw,116px)/1 Georgia,serif;letter-spacing:-.065em}.hb-discount small{font-size:.45em}.hb-welcome-copy>p{font-size:11px;margin:12px 0}.hb-welcome-photo{position:relative;min-width:0;background:#64734e}.hb-welcome-photo img{width:100%;height:100%;object-fit:cover;object-position:66% 50%}.hb-welcome-photo>span{position:absolute;bottom:18px;left:18px;right:18px;background:#f9f6e8;padding:8px;text-align:center;font-size:10px;letter-spacing:.08em}
+.hb-poster{background:#263f32;color:#f7f4e8;aspect-ratio:2/3.5;padding:28px;display:flex;flex-direction:column}.hb-poster-top{display:flex;justify-content:space-between;align-items:start}.hb-poster .hb-wordmark{color:#f7f4e8;font-size:14px}.hb-poster-top>span{font-size:9px;text-align:right;letter-spacing:.12em}.hb-poster h3{font:400 clamp(42px,5.5vw,80px)/.93 Georgia,serif;letter-spacing:-.065em;margin:25px 0 10px;z-index:2}.hb-poster h3 em{color:#dce99e}.hb-poster-sub{font-size:12px!important;letter-spacing:.03em;z-index:2}.hb-poster-photo{position:relative;flex:1;min-height:0;margin:22px 0 17px}.hb-poster-photo img{width:100%;height:100%;object-fit:cover;object-position:center 65%;border-radius:48% 48% 0 0}.hb-poster-photo>span{position:absolute;right:-7px;top:5%;background:#dce99e;color:#29382c;border-radius:50%;width:65px;height:65px;display:grid;place-content:center;font:italic 15px/1.1 Georgia,serif;text-align:center;transform:rotate(12deg)}.hb-poster-bottom{display:flex;justify-content:space-between;align-items:end;border-top:1px solid #dce99e66;padding-top:12px;font-size:9px;letter-spacing:.06em}.hb-poster-bottom b{font-size:14px;font-weight:400}.hb-campaign-note{font-size:12px;color:#536349;margin-top:24px}
+.direction{background:#f7f6ef}.direction .palette{gap:10px}.direction .swatch{border-radius:100px 100px 0 0;padding-top:48px;height:220px}.closing{background:#dce99e;position:relative}.closing:before{content:'✳';display:block;color:#36543c;font:64px Georgia,serif;margin-bottom:22px}
+@media(min-width:1700px){.hero,.hero-copy{min-height:800px}.hb-set h3{font-size:42px}.hb-poster h3{font-size:84px}}
+@media(max-width:1000px){.hero,.hero-copy{min-height:610px}.hero h1{font-size:82px}.hero-photo .hb-wordmark{left:25px;top:28px;font-size:21px}.hb-campaigns{grid-template-columns:1fr;max-width:760px;margin-inline:auto}.hb-poster-item{width:min(100%,480px);justify-self:center}.hb-poster h3{font-size:74px}.hb-set h3{font-size:36px}.hb-discount{font-size:110px}}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero,.hero-copy{min-height:0}.hero-copy{padding:35px 6%}.hero h1{font-size:clamp(72px,18vw,110px);margin:35px 0 25px}.hero-photo{height:auto;aspect-ratio:3/4;width:100%;margin:0}.hero-photo .hb-wordmark{font-size:24px;left:7%;top:7%}.hero-photo img{position:absolute}.hero-photo figcaption{left:7%;font-size:9px}.hero-photo .image-index{font-size:9px}.hb-project-nav{gap:20px;flex-wrap:wrap;font-size:11px;padding:14px 5%}.everyday-grid figure:last-child{margin-top:0}.everyday-grid figure:first-child img{aspect-ratio:1/1}.website-section .device-gallery{gap:16px}.website-section .device-gallery figure{padding:9px}.website-section .homepage-shot{border-width:4px}.hb-set{min-height:300px}.hb-set-copy{padding:22px 0 22px 18px}.hb-set h3{font-size:25px}.hb-set p{font-size:11px}.hb-set-photo{margin:38px 12px 38px 8px}.hb-art .hb-wordmark{font-size:11px}.hb-art .hb-mark{width:22px;height:22px;font-size:18px}.hb-sticker{width:55px;height:55px;font-size:16px}.hb-sticker small{font-size:8px}.hb-art-cta{font-size:10px;padding:8px 12px;gap:12px}.hb-welcome{min-height:260px;grid-template-columns:1.2fr 1fr}.hb-welcome-copy{padding:22px 16px}.hb-welcome h3{font-size:18px}.hb-discount{font-size:84px}.hb-welcome-photo>span{left:8px;right:8px;font-size:8px}.hb-poster{padding:24px;aspect-ratio:2/3.5;min-height:600px}.hb-poster h3{font-size:clamp(50px,13vw,74px)}.hb-poster-photo{margin-top:18px}.hb-poster-top>span{font-size:8px}.hb-art-caption{font-size:10px}.campaign-intro{font-size:14px}.direction .swatch{height:180px;padding:36px 18px 18px}.hb-thumbnail .hb-wordmark{font-size:20px}.hb-thumbnail .hb-mark{width:30px;height:30px;font-size:24px}}
+
+/* Softer palette and compact campaign compositions. Detail reading layout stays intact. */
+.hero{background:#f3f1e9;min-height:640px;align-items:center;overflow:visible}
+.hero-copy{min-height:640px;padding-top:44px;padding-bottom:40px}
+.hero h1{font-size:clamp(72px,7.5vw,118px);margin:38px 0 26px}
+.hero h1 em{color:#727a68}
+.hero-photo{width:min(72%,360px);height:auto;aspect-ratio:3/4;align-self:center;justify-self:center;margin:46px 0 58px;background:#e8dfd3}
+.hero-photo img{position:static;width:100%;height:auto;object-fit:contain}
+.hero-photo .hb-wordmark{top:7%;left:7%;font-size:19px;color:#485044}
+.hero-photo .hb-mark{width:28px;height:28px;font-size:23px}
+.hero-photo figcaption{bottom:-27px;left:0;font-size:9px;color:#697064}
+.hero-photo .image-index{bottom:-27px;right:0;font-size:9px;color:#697064}
+.manifesto,.closing{background:#dde2d8}.manifesto{padding-block:20px}.closing:before{color:#77796f}
+.website-section{background:#e8e7df;color:#424b40}
+.website-section h2 em{color:#737a68}
+.website-section .eyebrow,.website-section .small-note,.website-section .heading-grid>div>p{color:#616958}
+.website-section .section-heading{border-color:#c4c8bb}
+.website-section .homepage-shot{box-shadow:0 16px 40px #77796f16}
+.everyday-section{background:#f3f1e9}
+.everyday-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:stretch}
+.everyday-grid figure,.everyday-grid figure:last-child{margin:0;display:flex;flex-direction:column;min-width:0}
+.everyday-grid figure:first-child img,.everyday-grid figure:last-child img{aspect-ratio:3/2;width:100%;height:auto;object-fit:cover}
+.everyday-grid figcaption{padding:22px 0 26px;flex:1;border-color:#d3d5ca}
+.everyday-grid h3{font-size:21px;line-height:1.5;margin:10px 0}
+.everyday-grid p{font-size:14px;line-height:1.8}
+.campaign-section{background:#eeece5}
+.hb-campaigns{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;margin-top:38px}
+.hb-banner-stack{gap:24px}.hb-art{color:#444c40}
+.hb-art .hb-wordmark{font-family:Arial,'Malgun Gothic',sans-serif;font-weight:500;letter-spacing:.035em;font-size:10px;gap:7px}
+.hb-art .hb-mark{width:20px;height:20px;font-size:16px}
+.hb-art h3{font-family:'Malgun Gothic',sans-serif;font-weight:500;letter-spacing:-.045em}
+.hb-art-cta{border-radius:3px;background:#737c69;color:#fff;font-size:11px;padding:8px 12px;gap:18px}
+.hb-set{min-height:0;grid-template-columns:1fr 1.1fr;background:#f8f5ed}
+.hb-set-copy{padding:24px 18px 24px 24px;justify-content:center;align-items:start}
+.hb-set h3{font-size:27px;margin:18px 0 10px;line-height:1.4}
+.hb-set p{font-size:12px;line-height:1.8;margin:0 0 17px}
+.hb-set .hb-art-cta{margin-top:0}
+.hb-set-photo{margin:0;display:block;position:relative;min-height:275px}
+.hb-set-photo:before{display:none}
+.hb-set-photo img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;border-radius:0;object-fit:cover;object-position:62% 50%}
+.hb-sticker{right:12px;left:12px;bottom:12px;width:auto;height:auto;border-radius:2px;transform:none;border:0;background:#f7f5ede8;padding:8px 5px;font:9px/1.5 Arial,sans-serif;letter-spacing:.1em}
+.hb-welcome{min-height:0;grid-template-columns:1fr 1.1fr;background:#dde2d8}
+.hb-welcome-copy{padding:23px 24px}.hb-art-label{font-size:9px;letter-spacing:.09em;font-weight:500}
+.hb-welcome h3{font-size:21px;margin:12px 0 7px}
+.hb-discount{font:500 72px/.95 Arial,sans-serif;letter-spacing:-.065em}
+.hb-discount small{font-size:.43em;margin-left:3px;font-weight:400}
+.hb-welcome-copy>p{margin:10px 0 15px;font-size:11px}
+.hb-welcome-photo{min-height:265px;background:#c8cbbb}
+.hb-welcome-photo img{position:absolute;inset:0;object-position:67% 50%;width:100%;height:100%}
+.hb-welcome-photo>span{bottom:12px;left:12px;right:12px;background:#f7f5ede8;font-size:9px;padding:8px}
+.hb-poster{aspect-ratio:2/3;min-height:0;padding:24px;background:#e6e1d9;color:#454b40;display:flex;position:relative}
+.hb-poster .hb-wordmark{color:#454b40;font-size:10px}
+.hb-poster-top{position:relative;z-index:2;align-items:center;gap:10px}
+.hb-poster-top>span{font-size:8px;letter-spacing:.08em}
+.hb-poster h3{font-family:Arial,'Malgun Gothic',sans-serif;font-size:clamp(27px,2.7vw,40px);font-weight:400;letter-spacing:-.045em;line-height:1.08;margin:24px 0 9px}
+.hb-poster-sub{font-size:11px!important;letter-spacing:-.02em}
+.hb-poster-photo{position:absolute;inset:0;z-index:-1;margin:0;min-height:0}
+.hb-poster-photo img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0}
+.hb-poster-bottom{position:relative;z-index:2;margin-top:auto;border-color:#868b7760;padding-top:9px;font-size:8px;line-height:1.7}
+.hb-poster-bottom b{font-size:12px}
+.hb-art-caption{margin-top:10px;padding-top:9px;font-size:10px;border-color:#c9ccbf;letter-spacing:0}
+.direction .swatch{border-radius:0;height:170px;padding:24px;color:#444c40}
+.direction .sage{background:#dde2d8}.direction .olive{background:#e8dfd3}.direction .ink{background:#77796f;color:#fff}
+@media(min-width:1700px){.hero,.hero-copy{min-height:680px}.hero-photo{width:390px}.hb-set h3{font-size:29px}.hb-poster h3{font-size:40px}}
+@media(max-width:1000px){.hero,.hero-copy{min-height:590px}.hero h1{font-size:78px}.hero-photo{width:76%;max-width:330px}.hb-campaigns{grid-template-columns:1fr;max-width:700px}.hb-poster-item{width:min(100%,420px)}.hb-poster h3{font-size:36px}.everyday-grid h3{font-size:19px}}
+@media(max-width:700px){.hero,.hero-copy{min-height:0}.hero-copy{padding:34px 6% 24px}.hero h1{font-size:clamp(68px,17vw,100px);margin:30px 0 25px}.hero-photo{width:68%;max-width:290px;height:auto;aspect-ratio:3/4;margin:22px 0 55px}.hero-photo .hb-wordmark{font-size:16px}.hero-photo .hb-mark{width:23px;height:23px;font-size:19px}.hero-photo figcaption,.hero-photo .image-index{font-size:7px;bottom:-23px}.everyday-grid{grid-template-columns:1fr;gap:28px}.everyday-grid figure:first-child img,.everyday-grid figure:last-child img{aspect-ratio:3/2}.everyday-grid h3{font-size:20px}.everyday-grid figcaption{padding:17px 0 20px}.hb-campaigns{gap:28px}.hb-set,.hb-welcome{grid-template-columns:1fr 1fr}.hb-set-copy{padding:18px 12px 18px 16px}.hb-set h3{font-size:21px;margin-top:15px}.hb-set p{font-size:10px}.hb-art .hb-wordmark{font-size:8px;gap:5px}.hb-art .hb-mark{width:16px;height:16px;font-size:13px;flex-shrink:0}.hb-set-photo{min-height:265px}.hb-sticker{font-size:7px;left:7px;right:7px;padding:7px 3px}.hb-art-cta{font-size:9px;padding:7px 9px;gap:12px}.hb-welcome-copy{padding:20px 14px 20px 16px}.hb-art-label{font-size:8px;letter-spacing:.04em}.hb-welcome h3{font-size:16px;letter-spacing:-.05em}.hb-discount{font-size:64px}.hb-welcome-copy>p{font-size:10px}.hb-welcome-photo{min-height:240px}.hb-poster{padding:22px;min-height:0;aspect-ratio:2/3}.hb-poster h3{font-size:30px;margin-top:22px}.hb-poster-top>span{font-size:7px}.hb-poster-sub{font-size:10px!important}.hb-poster-bottom{font-size:7px}.hb-poster-bottom b{font-size:11px}.hb-art-caption{font-size:9px}.direction .swatch{height:150px;padding:20px 15px}}

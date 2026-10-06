@@ -1,0 +1,10 @@
+/* Project metadata only; brand palettes and artwork remain page-owned. */
+.project-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 32px;margin:36px 0 0;padding:26px 0;border-top:1px solid #8885;border-bottom:1px solid #8885}
+.project-facts div{min-width:0}
+.project-facts dt{font:500 10px/1.5 Arial,sans-serif;letter-spacing:.1em;opacity:.7;margin-bottom:9px}
+.project-facts dd{margin:0;font-size:13px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere}
+.project-facts div:last-child{grid-column:1/-1}
+.hb-project-information{width:88%;max-width:1440px;margin:0 auto 45px}
+.project-end{display:flex;justify-content:space-between;gap:24px;padding-top:32px;padding-bottom:45px;border-top:1px solid #8885;font-size:13px}
+@media(max-width:767px){.project-facts{grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}.project-facts dd{font-size:12px}}
+@media(max-width:380px){.project-facts{grid-template-columns:1fr}}

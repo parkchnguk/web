@@ -1,0 +1,38 @@
+/* Only loaded by the Banner Design detail page. */
+.banner-page { background: #faf9f6; }
+.banner-page .banner-wrap { width: min(92%, 1320px); margin-inline: auto; }
+.banner-page .banner-top { border-bottom: 1px solid #dedbd4; }
+.banner-page .banner-top .banner-wrap { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.banner-page .back-link { font-size: 13px; }
+.banner-page a:focus-visible { outline: 2px solid #555; outline-offset: 6px; }
+.banner-page .banner-intro { padding: 90px 0 70px; }
+.banner-page .banner-intro .eyebrow { color: #78756e; margin-bottom: 20px; letter-spacing: .12em; }
+.banner-page h1 { font-family: 'Crimson Text', serif; font-size: clamp(40px, 6vw, 80px); font-weight: 400; line-height: 1.05; letter-spacing: -.025em; }
+.banner-page .banner-subtitle { margin-top: 15px; font-family: 'Crimson Text', serif; font-size: 24px; }
+.banner-page .banner-description { margin-top: 24px; color: #706b64; font-size: 14px; line-height: 1.9; word-break: keep-all; }
+.banner-page .banner-work { margin-bottom: 90px; min-width: 0; }
+.banner-page .banner-caption { border-top: 1px solid #d9d5ce; padding-top: 20px; margin-bottom: 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.banner-page .banner-caption span { font-size: 11px; letter-spacing: .1em; color: #77736d; }
+.banner-page .banner-caption h2 { font-family: 'Crimson Text', serif; font-weight: 400; font-size: 30px; margin-top: 5px; }
+.banner-page .banner-caption p { font-size: 12px; color: #77736d; }
+.banner-page .banner-art { display: block; width: 100%; height: auto; }
+.banner-page .social-collection { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(36px, 7vw, 110px); align-items: start; }
+.banner-page .social-collection .banner-caption { display: block; }
+.banner-page .social-collection .banner-caption p { margin-top: 8px; }
+.banner-page .story-art { max-width: 420px; margin-inline: auto; }
+.banner-page .banner-end { border-top: 1px solid #d9d5ce; padding: 36px 0 54px; display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+.banner-page .banner-end p { font-size: 12px; color: #77736d; }
+@media(max-width: 767px) {
+  .banner-page .banner-wrap { width: calc(100% - 40px); }
+  .banner-page .banner-top .banner-wrap { min-height: 72px; }
+  .banner-page .banner-top .logo { font-size: 14px; letter-spacing: .04em; }
+  .banner-page .back-link { font-size: 12px; white-space: nowrap; }
+  .banner-page .banner-intro { padding: 56px 0 48px; }
+  .banner-page .banner-subtitle { font-size: 21px; }
+  .banner-page .banner-work { margin-bottom: 56px; }
+  .banner-page .banner-caption { display: block; margin-bottom: 20px; }
+  .banner-page .banner-caption h2 { font-size: 27px; }
+  .banner-page .banner-caption p { margin-top: 8px; }
+  .banner-page .social-collection { grid-template-columns: 1fr; gap: 0; }
+  .banner-page .banner-end { flex-direction: column; align-items: flex-start; }
+}

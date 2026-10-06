@@ -1,0 +1,31 @@
+/* Isolated styles for the poster collection. Existing project styles are unchanged. */
+.poster-page { background: #faf9f6; }
+.poster-page .poster-wrap { width: min(92%, 1320px); margin-inline: auto; }
+.poster-page .poster-top { border-bottom: 1px solid #dedbd4; }
+.poster-page .poster-top .poster-wrap { min-height: 74px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.poster-page .poster-back { font-size:13px; }
+.poster-page a:focus-visible { outline:2px solid #555; outline-offset:6px; }
+.poster-page .poster-intro { padding:90px 0 80px; }
+.poster-page .eyebrow { color:#78756e; letter-spacing:.12em; margin-bottom:20px; }
+.poster-page h1 { font-family:'Crimson Text',serif; font-size:clamp(40px,6vw,80px); font-weight:400; line-height:1.05; letter-spacing:-.025em; }
+.poster-page .poster-subtitle { font-family:'Crimson Text',serif; font-size:24px; margin-top:15px; }
+.poster-page .poster-description { max-width:650px; margin-top:24px; font-size:14px; line-height:1.9; color:#706b64; word-break:keep-all; }
+.poster-page .poster-work { width:min(100%,600px); margin:0 auto 110px; }
+.poster-page .poster-caption { border-top:1px solid #d9d5ce; padding-top:20px; margin-bottom:26px; }
+.poster-page .poster-caption span { color:#77736d; font-size:11px; letter-spacing:.12em; }
+.poster-page .poster-caption h2 { font-family:'Crimson Text',serif; font-size:30px; font-weight:400; margin-top:5px; }
+.poster-page .poster-caption p { font-size:13px; color:#77736d; margin-top:5px; }
+.poster-page .poster-art { display:block; width:100%; height:auto; }
+.poster-page .poster-end { border-top:1px solid #d9d5ce; padding:36px 0 54px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.poster-page .poster-end p { color:#77736d; font-size:12px; }
+@media(max-width:767px) {
+ .poster-page .poster-wrap { width:calc(100% - 40px); }
+ .poster-page .poster-top .logo { font-size:14px; letter-spacing:.04em; }
+ .poster-page .poster-back { font-size:12px; white-space:nowrap; }
+ .poster-page .poster-intro { padding:56px 0 52px; }
+ .poster-page .poster-subtitle { font-size:21px; }
+ .poster-page .poster-work { width:100%; margin-bottom:64px; }
+ .poster-page .poster-caption { margin-bottom:22px; }
+ .poster-page .poster-caption h2 { font-size:26px; }
+ .poster-page .poster-end { flex-direction:column; align-items:flex-start; }
+}

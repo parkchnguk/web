@@ -1,0 +1,6 @@
+/* Campaign art direction: forest, warm paper and a fresh lime accent. */
+.hb-wordmark{display:flex;align-items:center;gap:10px;color:#29382c;font:600 18px/1.05 Georgia,serif;letter-spacing:-.04em}
+.hb-wordmark b{font:inherit}.hb-wordmark small{display:block;font:10px/1.4 'Malgun Gothic',sans-serif;letter-spacing:.08em;margin-top:7px}.hb-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid currentColor;border-radius:50%;font-size:29px;font-weight:400}
+.hb-thumbnail{position:relative}.hb-thumbnail .hb-wordmark{position:absolute;top:7%;left:7%;z-index:2;pointer-events:none}.hb-thumbnail .hb-wordmark small{font-size:10px}.hb-thumbnail .hb-wordmark{font-size:clamp(16px,2vw,28px)}
+
+@media(max-width:700px){.hb-thumbnail .hb-wordmark{font-size:20px}.hb-thumbnail .hb-mark{width:30px;height:30px;font-size:24px}}
